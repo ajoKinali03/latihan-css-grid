@@ -1,0 +1,24 @@
+body{
+  background-color: grey;
+  color: red;
+}
+
+.container{
+  margin-top: 50px;
+  margin: auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 20% 20%;
+}
+
+.item{
+  margin: auto;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item:nth-child(even){
+  background-color: white;
+}
