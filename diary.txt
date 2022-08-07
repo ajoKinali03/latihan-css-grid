@@ -1,1 +1,19 @@
 ++++++ latihan css grid +++++++
+
+pengertian css grid: merupakan modul css untuk mengatur tampilan dari sebuah web dan
+                     cara kerja nya hamipir sama dengan flex box namun dalam dua dimensi,
+                     flex box hanya bisa mengatur satu dimensi sedangkan css grid dapat mengatur dua dmensi yaitu column(kolom) dan row(baris). sehingga ini akan lebih memudahkan untuk mengatur tampilan sebuah web, modul css grid di buat bukan untuk menggntikan flex box, namun flex box akan menjadi kombinasi bagi css grid.
+
+istilah" atau terminologi yang ada pada css grid:
+    -grid container: adalah elment pembungkus dengan dispaly grid
+    -grid item: adalah item item yang dibungkus oleh container yang telah diberi display
+                grid
+    -grid line: adalah garis yam membatasi antara item item secara vertical atau 
+                horizontal
+    -column: kolom adalah elment yang akan bertumpuk searah sumbu-y atau vertical
+    -row: baris adalah elment yang akan bertumpuk searah sumbu-x atau horizontal
+    -grid cell: adalah sebuah bagian atau perpotongan dintara column(kolom) dan row(baris)
+    -grid area: adalah kumpulan dari cell cell yang membentu kotak
+    -grid track: adalah jarak antara line vertical atau horizontal, dan grid track juga
+                 bisa bisa di sebut ukuran dari cell atau area
+    -grid gap: adalah jarak antara cell atau area
