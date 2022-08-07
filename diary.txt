@@ -17,3 +17,116 @@ istilah" atau terminologi yang ada pada css grid:
     -grid track: adalah jarak antara line vertical atau horizontal, dan grid track juga
                  bisa bisa di sebut ukuran dari cell atau area
     -grid gap: adalah jarak antara cell atau area
+    -fraction: fraction adalah sebuah calue kusus untuk grid denga satuan fr, nilai
+               fraction didapat kan dengan menjumlahkan semua niali fraction dan membagi nya denga lebar container sehingga di dapatkan berapa nilai 1fr.
+
+
+properti properti pada css grid.
+
+sepcial function & keywords( untuk pendukung value di properti gtr & gtc ):
+-
+
+
+properti untuk container:
+
+    => grid-template-columns: merupakan properti untuk menentukan ukuran item dan banyak
+                              nya column di dalam pembungkus atau container, value dari properti ini dapat berupa px, %, fr(fraction). setian value dapat lebih dari satu dan membuat column baru di samping nya, dan di pisahkan dengan spasi, spasi ini dapat di artikan sebagi line atau batas antar item.
+
+                              untuk contoh silahkan copy code dibawah:
+                              ______________________________________________________
+                              //html
+                                <div class="container">
+                                    <div class="item">1</div>
+                                    <div class="item">2</div>
+                                    <div class="item">3</div>
+                                    <div class="item">4</div>
+                                    <div class="item">5</div>
+                                    <div class="item">6</div>
+                                    <div class="item">7</div>
+                                    <div class="item">8</div>
+                                    <div class="item">9</div>
+                                </div>
+
+                              //css
+                                body{
+                                background-color: grey;
+                                color: red;
+                                }
+
+                                .container{
+                                margin-top: 50px;
+                                margin: 100px auto;
+                                width: 70%;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr 1fr; /* --code-- */
+                                grid-template-rows: 1fr 100px;
+                                grid-auto-flow: column;
+                                grid-auto-columns: 100px;
+                                }
+
+                                .item{
+                                padding: 5px 0;
+                                background-color: black;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                }
+
+                                .item:nth-child(even){
+                                background-color: white;
+                                }
+                              ______________________________________________________
+                              pada line code yang di komen /*--code--*/ yang ada di
+                              css dapat di lihat ada 3 value maka akan di hasilakan 3 column berpua item atau bisa di sebut explicit dan item yang lainnya akan mengikuti kebawah atau bisa di sebut inplicit.
+
+
+
+=> grid-template-rows:  merupakan properti untuk menentukan ukuran item dan banyak
+                        nya row(baris) di dalam pembungkus atau container, value dari properti ini dapat berupa px, %, fr(fraction). setian value dapat lebih dari satu dan membuat row(baris) baru di samping nya, dan di pisahkan dengan spasi, spasi ini dapat di artikan sebagi line atau batas antar item.
+
+                        untuk contoh silahkan copy code dibawah:
+                        ______________________________________________________
+                        //html
+                        <div class="container">
+                            <div class="item">1</div>
+                            <div class="item">2</div>
+                            <div class="item">3</div>
+                            <div class="item">4</div>
+                            <div class="item">5</div>
+                            <div class="item">6</div>
+                            <div class="item">7</div>
+                            <div class="item">8</div>
+                            <div class="item">9</div>
+                        </div>
+
+                        //css
+                        body{
+                        background-color: grey;
+                        color: red;
+                        }
+
+                        .container{
+                        margin-top: 50px;
+                        margin: 100px auto;
+                        width: 70%;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr; 
+                        grid-template-rows: 1fr 100px; /*--code-- */
+                        grid-auto-flow: column;
+                        grid-auto-columns: 100px;
+                        }
+
+                        .item{
+                        padding: 5px 0;
+                        background-color: black;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        }
+
+                        .item:nth-child(even){
+                        background-color: white;
+                        }
+                        ______________________________________________________
+                        pada line code yang di komen /*--code--*/ yang ada di
+                        css dapat di lihat ada 2 value maka akan di hasilakan 2 row berpua item atau bisa di sebut explicit dan item yang lainnya akan mengikuti kesamping atau bisa di sebut inplicit.
