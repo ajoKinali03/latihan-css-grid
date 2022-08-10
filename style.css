@@ -9,7 +9,7 @@ body {
   margin: 100px auto;
   width: 70%;
   display: grid;
-  grid-template-columns: 1fr 1fr minmax(100px, 200px);
+  grid-template-columns: repeat(auto-fill, 100px);
   grid-template-rows: 1fr 2fr 3fr;
   overflow: hidden;
 }

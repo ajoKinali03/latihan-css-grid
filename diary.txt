@@ -31,7 +31,10 @@ sepcial function & keywords( untuk pendukung value di properti gtr & gtc ):
                                sesuai kontent didalam nya jika keyword yang di berikan min-content atau ukuran minimal dari kontent maka ukuran nya akan mengambil lebar ukuran terbesar dan jika  keywordnya adalah max-content atau ukuran maksimal dari kontent maka ukuran nya akan mengambil luas keseluruhan dari isi kontent
 
 - minmax() => merupakan function untuk membuat ukuran pada kontent memiliki limit 
-              tertentu dengan batas minmal dan batas maksimal jika lebih dari itu maka kontent tidak dapat mengecil atau membesat lagi 
+              tertentu dengan batas minmal dan batas maksimal jika lebih dari itu maka kontent tidak dapat mengecil atau membesat lagi
+
+- auto-fill dan auto-fit => merupakan velue atau keywords berfungsi untuk apabila kontent 
+                            memiliki ukuran fix dan apbila container ukuran nya membesar maka akan terjadi kekosongan kontent di di sebelah kontent yang terisi maka value ini di gunakan di dalam repeat agar jumlah colom atau row nya relatif terhadap kontent sehingga kekosongan kontent tsb bisa terisi.  
 
 properti untuk container:
 
