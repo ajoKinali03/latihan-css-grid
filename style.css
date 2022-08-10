@@ -1,20 +1,18 @@
-body{
+body {
   background-color: grey;
   color: red;
 }
 
-.container{
+.container {
   margin-top: 50px;
   margin: 100px auto;
   width: 70%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 100px;
-  grid-auto-flow: column;
-  grid-auto-columns: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 3fr;
 }
 
-.item{
+.item {
   padding: 5px 0;
   background-color: black;
   display: flex;
@@ -22,6 +20,6 @@ body{
   align-items: center;
 }
 
-.item:nth-child(even){
+.item:nth-child(even) {
   background-color: white;
 }
