@@ -30,6 +30,8 @@ sepcial function & keywords( untuk pendukung value di properti gtr & gtc ):
 - min-content & max-content => merupakan value atau keyword untuk memberikan ukuran 
                                sesuai kontent didalam nya jika keyword yang di berikan min-content atau ukuran minimal dari kontent maka ukuran nya akan mengambil lebar ukuran terbesar dan jika  keywordnya adalah max-content atau ukuran maksimal dari kontent maka ukuran nya akan mengambil luas keseluruhan dari isi kontent
 
+- minmax() => merupakan function untuk membuat ukuran pada kontent memiliki limit 
+              tertentu dengan batas minmal dan batas maksimal jika lebih dari itu maka kontent tidak dapat mengecil atau membesat lagi 
 
 properti untuk container:
 
