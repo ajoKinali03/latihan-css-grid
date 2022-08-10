@@ -25,7 +25,10 @@ properti properti pada css grid.
 
 sepcial function & keywords( untuk pendukung value di properti gtr & gtc ):
 - repeat() => merupakan function css untuk penyingkatan value yang sama tanpa harus 
-              mengulang value itu sendiri yang membuat barisan code tidak rapi 
+              mengulang value itu sendiri yang membuat barisan code tidak rapi
+
+- min-content & max-content => merupakan value atau keyword untuk memberikan ukuran 
+                               sesuai kontent didalam nya jika keyword yang di berikan min-content atau ukuran minimal dari kontent maka ukuran nya akan mengambil lebar ukuran terbesar dan jika  keywordnya adalah max-content atau ukuran maksimal dari kontent maka ukuran nya akan mengambil luas keseluruhan dari isi kontent
 
 
 properti untuk container:
