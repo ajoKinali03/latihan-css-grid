@@ -139,3 +139,24 @@ properti untuk container:
                             ______________________________________________________
                             pada line code yang di komen /*--code--*/ yang ada di
                             css dapat di lihat ada 2 value maka akan di hasilakan 2 row berpua item atau bisa di sebut explicit dan item yang lainnya akan mengikuti kesamping atau bisa di sebut inplicit.
+
+
+    => grid-auto-column: berfungsi untuk mengatur ukuran column inplicit
+
+    => grid-auto-row: berfungsi untuk mengatur ukuran row inplicit
+
+    => grid-auto-flow: berfungsi mengatur arah dari item yang inplicit apakah row atau 
+                       column
+
+    => grid-template-areas: berfungsi untuk menentukan area-area pada halaman web. value 
+                            dari properti ini berupa nama atau sebagainya tidak memiliki value khusus. cth:
+                            
+                            grid-tempalte-areas:
+                              'header hedaer header'
+                              'sidebar content content'
+                              'footer footer footer'
+                            ;
+
+    => gap | column-gap | row-gap: berfungsi untuk memberkan jarak antara item item dari 
+                                   column atau row nya. cth:
+                                   gap:  10px 10px;
